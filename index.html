@@ -17,7 +17,8 @@
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         .light{
-             color: rgb(185, 181, 181); font-family: 'Poppins', sans-serif;
+             color: rgb(116, 113, 113); font-family: 'Poppins', sans-serif;
+             font-size: larger;
         }
         .alignment{
             text-align: right;
@@ -68,12 +69,199 @@
     }
     .badge {
       position: absolute;
-      bottom: 450px;
+      bottom: 460px;
       left: 370px;
       width: 250px;
       height: 250px;
       z-index: 10;
     }
+    .deal-img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    }
+
+    .deal-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    }
+
+    .deal-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 2;
+    }
+
+    .large-deal {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    }
+
+    .shop-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    }
+    .newsletter-section {
+    background-image: url('news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-content {
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.newsletter-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    font-size: 1em;
+}
+
+.newsletter-form button {
+    padding: 15px 30px;
+    background-color: #e67337;
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #cc5f2b;
+}
+.footer {
+  background-color: #f6f6f6;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 150px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #000;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social a {
+  font-size: 18px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #000;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+
+
     </style>
 </head>
 <body>
@@ -119,34 +307,119 @@
         <br>
         <div class="sample-flower">
             <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">    Add to cart    </span> </center> </span>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;" >    Add to cart    </span> </center> </span>
             <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">    Add to cart    </span> </center> </span>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;">    Add to cart    </span> </center> </span>
             <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">    Add to cart    </span> </center> </span>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;">    Add to cart    </span> </center> </span>
             <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">    Add to cart    </span> </center> </span>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;">    Add to cart    </span> </center> </span>
             <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">    Add to cart    </span> </center> </span>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;">    Add to cart    </span> </center> </span>
                 <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">    Add to cart    </span> </center> </span>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;">    Add to cart    </span> </center> </span>
+            <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3" > <center>Lily Blossom <br>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;">    Add to cart    </span> </center> </span>
             <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">    Add to cart    </span> </center> </span>
-            <span class="sample-flower-bottom-writing"><img src="sample-flower-image.png" alt="Sample-flower-3"> <center>Lily Blossom <br>
-                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2">Add to cart</span> </center> </span>
+                <b>20 USD</b> <br>  <span class="sample-flower-bottom-writing-2" style="cursor: pointer;">Add to cart</span> </center> </span>
         </div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div>
-        <div class="marg" style="position: relative; display: inline-block;">
-        <img src="flower-store.png" alt="Flower-store" >
-        <img src="trusted-badge.png" alt="Trusted-badge" class="badge">
-        
+    <div class="marg" style="display: flex; align-items: center; gap: 100px; position: relative;">
+        <div style="position: relative;">
+            <img src="flower-store.png" alt="Flower-store">
+            <img src="trusted-badge.png" alt="Trusted-badge" class="badge">
+        </div>
+        <div style="text-align: left;">
+            <h1 style=" font-size: 3.5em;">Flower & Plant <br> Lover</h1>
+            <ul class="light">
+                <li>Indulge your senses with the beauty and fragrance of our fresh <br> flower shop. From classic roses to exotic blooms, we offer a wide <br> variety of fresh.</li>
+                <br>
+                <li>Indulge your senses with the beauty and fragrance of our fresh <br> flower shop. From classic roses to exotic blooms, we offer a wide <br> variety of fresh.</li>
+                <br>
+                <li>Indulge your senses with the beauty and fragrance of our fresh <br> flower shop. From classic roses to exotic blooms, we offer a wide <br> variety  of fresh.</li>
+            </ul>
+        </div>
     </div>
+    <div class="marg" style="text-align: center;">
+        <h1 style="font-size: 3em;"><span style="color: salmon;">Latest</span>  Deals</h1>
+        <span class="light">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</span>
     </div>
-    <div>
-        
+    <br><br><br><br>
+
+    <div style="display: flex; gap: 20px; justify-content: center; margin: 0 80px;">
+    <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="deal-box">
+            <img src="deal-bloom.png" alt="Bloom Plant" class="deal-img">
+            <div class="deal-text">
+                <h3>60% Off | <b>Bloom Plant</b></h3>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+        </div>
+        <div class="deal-box">
+            <img src="deal-ana.png" alt="Ana Plant" class="deal-img">
+            <div class="deal-text">
+                <h3>30% Off | <b>Ana Plant</b></h3>
+                <a href="#" class="shop-now">Shop Now</a>
+            </div>
+        </div>
     </div>
+    <div class="deal-box" style="flex: 1; position: relative;">
+        <img src="deal-zabo.png" alt="Zabo Plant" class="deal-img" style="height: 100%; object-fit: cover;">
+        <div class="deal-text large-deal">
+            <h1>25% Off | <b>Zabo Plant</b></h1>
+            <a href="#" class="shop-now">Shop Now</a>
+        </div>
+    </div>
+</div> 
+<br><br><br><br>
+    <div class="newsletter-section">
+    <div class="newsletter-content">
+        <h1>Join the colorful Bunch</h1>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Write email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="logo.png" alt="Faugei Logo" class="footer-logo">
+      <p class="footer-description">
+        Indulge your senses with the beauty and fragrance of our fresh flower shop.
+      </p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Help Center</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" width="24"></a>
+      <a href="#"><img src="icon-twitter.png" alt="icon-twitter" width="24"></a>
+      <a href="#"><img src="icon-facebook.png" alt="Facebook" width="24"></a>
+      <a href="#"><img src="icon-youtube.png" alt="YouTube" width="24"></a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Faugei Flower Shop. All rights reserved.</p>
+  </div>
+</footer>
+
     
 </body>
 </html>
